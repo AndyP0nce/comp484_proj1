@@ -144,20 +144,21 @@ main {
 
 /* Tables */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #faedcd;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FAEDCD;
 }
 
 
 th {
-    background-color: #CCD5AE;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: .84rem;
-    text-transform: uppercase;
-    text-align: center;
+  background-color: #CCD5AE;
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 14px;
+  border: 1px solid #D4A373;
+  text-align: center;
 
 }
 td {
@@ -198,7 +199,6 @@ table a {
 table a:hover {
   text-decoration: underline;
 }
-
 
 .score {
   font-size: 0.82rem;
