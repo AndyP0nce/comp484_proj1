@@ -64,6 +64,7 @@ main {
   margin: 0 auto;
   padding: 36px 24px;
 }
+  
 /* section block */
 .block {
     margin-bottom: 44px;
@@ -149,7 +150,6 @@ table {
   background-color: #FAEDCD;
 }
 
-
 th {
   background-color: #CCD5AE;
   font-family: Arial, sans-serif;
@@ -169,16 +169,12 @@ td {
   text-align: center;
 }
 
-/* col colour hints via colgroup classes */
+/* col color hints via colgroup classes */
 col.colorRank   { background-color: #E9EDC9; }
 col.colorTitle  { background-color: #FEFAE0; }
 col.colorYear   { background-color: #E9EDC9; }
 col.colorRating { background-color: #f5e4bc; }
 col.colorLink   { background-color: #FAEDCD; }
-col.colorLabel  { background-color: #E9EDC9; }
-col.colorValue  { background-color: #FEFAE0; }
-col.colorA      { background-color: #E9EDC9; }
-col.colorB      { background-color: #FAEDCD; }
 
 /* stat label cells */
 td.labelCell {
@@ -257,11 +253,6 @@ table a:hover {
   font-family: Arial, sans-serif;
 }
 
-.card p {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
 
 .cardLink {
   display: inline-block;
@@ -277,12 +268,6 @@ table a:hover {
 }
 
 /* friends review comments*/
-
-.subtext {
-  font-size: 0.85rem;
-  color: #6a5840;
-  margin-bottom: 16px;
-}
 
 .reviewBox {
   background-color: #E9EDC9;
