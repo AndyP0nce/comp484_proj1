@@ -34,26 +34,27 @@ header p {
 /* Navigation */
 
 nav {
-    background-color: #D4A373;
-    padding: 12px 40px;
-    display: flex;
-    justify-content: center;
+  background-color: #D4A373;
+  padding: 0 40px;
+  display: flex;
+  gap: 2px;
 }
 
 nav a {
-    color: #FEFAE0;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1rem;
+  display: inline-block;
+  color: #FEFAE0;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-family: Arial, sans-serif;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  background-color: #b8895a;
 }
 
 nav a.active {
-    font-weight: bold;
-    text-decoration: underline;
+  background-color: #9a7044;
 }
 
 /* Main */
@@ -87,6 +88,67 @@ main {
     color: #4a3b27;
 }
 
+/* --- displayboard --- */
+
+.displayboard {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin-bottom: 36px;
+}
+
+.ImgPoster {
+  width: 200px;
+  min-height: 280px;
+  background-color: #E9EDC9;
+  border: 2px solid #D4A373;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9a7044;
+  font-size: 0.85rem;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  text-align: center;
+  padding: 12px;
+}
+
+.displayboardInfo h2 {
+  font-size: 1.9rem;
+  margin-bottom: 8px;
+  color: #5a3e1b;
+  border: none;
+  padding: 0;
+}
+
+.meta {
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  color: #6a5840;
+  margin-bottom: 14px;
+}
+
+.meta span {
+  margin-right: 14px;
+}
+
+.scoreBadge {
+  display: inline-block;
+  background-color: #D4A373;
+  color: #FEFAE0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 7px 18px;
+  margin-bottom: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.displayboardInfo p {
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: #4a3b27;
+}
 
 /* Tables */
 table {
@@ -164,16 +226,65 @@ table a:hover {
   display: block;
   width: 100%;
   max-width: 640px;
+  max-height: 640px;
   margin: 0 auto;
 }
 
 /* movie posters */
 
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
 
+.card {
+  background-color: #FAEDCD;
+  border: 1px solid #D4A373;
+  padding: 18px;
+}
 
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #CCD5AE;
+}
 
+.card h3 {
+  margin-top: 12px;
+  font-size: 1.05rem;
+}
 
+.badge {
+  display: inline-block;
+  background-color: #CCD5AE;
+  color: #3a2e1e;
+  padding: 2px 8px;
+  font-size: 0.78rem;
+  margin-top: 6px;
+  font-family: Arial, sans-serif;
+}
 
+.card p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.cardLink {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.88rem;
+  color: #7a4f1e;
+  text-decoration: none;
+  border-bottom: 1px solid #D4A373;
+}
+
+.cardLink:hover {
+  color: #3a2e1e;
+}
 
 /* friends review comments*/
 
