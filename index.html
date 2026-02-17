@@ -14,72 +14,179 @@
         <p> My personal ranking and reviews of the top 4 robot movies.</p>
     </header>
 
+    <!-- Navigation menu -->
     <nav>
         <ul>
-            <li><a href="TheIronGiant.html">The Iron Giant</a></li>
-            <li><a href="Terminator.html">The Terminator</a></li>
-            <li><a href="Wall-E.html">Wall-E</a></li>
-            <li><a href="RealSteel.html">Real Steel</a></li>
+            <a href="TheIronGiant.html">The Iron Giant</a>
+            <a href="Terminator.html">The Terminator</a>
+            <a href="Wall-E.html">Wall-E</a>
+            <a href="RealSteel.html">Real Steel</a>
         </ul>
     </nav>
 
-    <main>
-        <article>
-            <h2>Welcome</h2>
-            <p>Welcome to my website where I share my personal ranking and reviews of the top 4 robot movies. Each movie has its own page with a detailed review and analysis. Feel free to explore and discover why these movies made it to my <strong>top 4 list!</strong></p>
-        </article>
+<main>
+    <!-- Welcome article -->
+    <article class="block">
+        <h2>Welcome</h2>
+        <p>Welcome to my website where I share my personal ranking and reviews of the top 4 robot movies. Each movie has its own page with a detailed review and analysis. Feel free to explore and discover why these movies made it to my <strong>top 4 list!</strong></p>
+    </article>
 
-        <!-- Rank table - using colgroup and col elements. -->
+    <!-- Rank table - using colgroup and col elements. -->
+    <section class="block">
+        <h2>My Top 4 Robot Movies</h2>
+        <table>
+            <colgroup>
+                <col class="colorRank">
+                <col class="colorTitle">
+                <col class="colorYear">
+                <col class="colorRating">
+                <col class="colorLink">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>My Rating</th>
+                    <th>Review</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Real Steel</td>
+                    <td>2011</td>
+                    <td><span class="stars">★★★★★</span> <span class="score">10 / 10</span></td>
+                    <td><a href="RealSteel.html">Read →</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>The Iron Giant</td>
+                    <td>1999</td>
+                    <td><span class="stars">★★★★☆</span> <span class="score">9 / 10</span></td>
+                    <td><a href="TheIronGiant.html">Read →</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Wall-E</td>
+                    <td>2008</td>
+                    <td><span class="stars">★★★★★</span> <span class="score">9 / 10</span></td>
+                    <td><a href="Wall-E.html">Read →</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Terminator</td>
+                    <td>1984</td>
+                    <td><span class="stars">★★★★☆</span> <span class="score">8 / 10</span></td>
+                    <td><a href="Terminator.html">Read →</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <section>
-            <h2>My Top 4 Robot Movies</h2>
-                <table>
-                    <colgroup>
-                        <col class="colorRank">
-                        <col class="colorTitle">
-                        <col class="colorYear">
-                        <col class="colorRating">
-                        <col class="colorLink">
-                    </colgroup>
-                </table>
-
-
-
-
+    <!-- trailer view -->
+        <section class="block">
+        <h3>Trailer</h3>
+        <div class="videoWrap">
+            <video controls playsinline width="640">
+                <source src="media/RealSteelTrailer.mp4" type="video/mp4">
+            </video>
+        </div>
         </section>
 
-        <!-- Featured Reviews cards -->
-         <section>
-            <h2>Featured Reviews</h2>
+        <!-- Movie posters-->
+        <section class="block">
+        <h2>Movie Posters</h2>
+        <div class="cardGrid">
 
-         </section>
-
-         <!-- Friends option about the movies -->
-
-        <section>
-            <h2>Comments about the Movies</h2>
-            <p> Click here to leave your comments about the movies.</p>
-
-            <div class="reviewBox">
-                <div class="reviewer"> Your review here! </div>
-                    <div contenteditable="true"
-                        class="reviewContent"> Click here to write your review! 
-                    </div>
+            <div class="card">
+                <img src="media/RealSteelPoster.jpg" alt="Real Steel Poster">
+                <h3>Real Steel</h3>
+                <span class="badge">Rank 1</span>
+                <a href="RealSteel.html" class="cardLink">Read Review →</a>
             </div>
+            <div class="card">
+                <img src="media/TheIronGiantPoster.jpg" alt="The Iron Giant Poster">
+                <h3>The Iron Giant</h3>
+                <span class="badge">Rank 2</span>
+                <a href="TheIronGiant.html" class="cardLink">Read Review →</a>
+            </div>
+            <div class="card">
+                <img src="media/WallEPoster.jpg" alt="Wall-E Poster">
+                <h3>Wall-E</h3>
+                <span class="badge">Rank 3</span>
+                <a href="Wall-E.html" class="cardLink">Read Review →</a>
+            </div>
+            <div class="card">
+                <img src="media/TerminatorPoster.jpg" alt="The Terminator Poster">
+                <h3>The Terminator</h3>
+                <span class="badge">Rank 4</span>
+                <a href="Terminator.html" class="cardLink">Read Review →</a>
+            </div>
+
+        </div> 
         </section>
 
+    <!-- Friends option about the movies / using contenteditable -->
 
-    </main>
+    <section class ="block">
+        <h2>Comments about the Movies</h2>
+        <p class="subtext"> Click here to leave your comments about the movies.</p>
 
-    <footer>
-        <p>&copy; 2024 Top 4 Robot Movies. All rights reserved. &nbsp;|&nbsp;
-            <a href="index.html">Home</a> &nbsp;|&nbsp;
-            <a href="TheIronGiant.html">The Iron Giant</a> &nbsp;|&nbsp;
-            <a href="Terminator.html">The Terminator</a> &nbsp;|&nbsp;
-            <a href="Wall-E.html">Wall-E</a> &nbsp;|&nbsp;
-            <a href="RealSteel.html">Real Steel</a>
-        </p>
-    </footer>
+        <div class="reviewBox">
+            <div class="reviewer"> Your review here! </div>
+                <div contenteditable="true"
+                    class="reviewContent"> Click here to write your review! 
+                </div>
+                <div class="stars" contenteditable="true"> Click here to give your rating! </div>
+        </div>
+
+        <div class="reviewBox">
+            <div class="reviewer"> Thomas Smith </div>
+                <div class="reviewContent"> 
+                    I love Real Steel! The robot boxing scenes are so intense and the father-son relationship is heartwarming. Definitely my favorite robot movie! 
+                </div>
+                <div class="stars" contenteditable="true"> ★★★★★ 10/10 </div>
+        </div>
+
+        <div class="reviewBox">
+            <div class="reviewer"> Thomas Smith </div>
+                <div class="reviewContent"> 
+                    I love Real Steel! The robot boxing scenes are so intense and the father-son relationship is heartwarming. Definitely my favorite robot movie! 
+                </div>
+                <div class="stars" contenteditable="true"> ★★★★★ 10/10 </div>
+        </div>
+
+        <div class="reviewBox">
+            <div class="reviewer"> Thomas Smith </div>
+                <div class="reviewContent"> 
+                    I love Real Steel! The robot boxing scenes are so intense and the father-son relationship is heartwarming. Definitely my favorite robot movie! 
+                </div>
+                <div class="stars" contenteditable="true"> ★★★★★ 10/10 </div>
+        </div>
+
+        <div class="reviewBox">
+            <div class="reviewer"> Thomas Smith </div>
+                <div class="reviewContent"> 
+                    I love Real Steel! The robot boxing scenes are so intense and the father-son relationship is heartwarming. Definitely my favorite robot movie! 
+                </div>
+                <div class="stars" contenteditable="true"> ★★★★★ 10/10 </div>
+        </div>
+    </section>
+
+
+
+</main>
+
+<footer>
+    <p>&copy; 2024 Top 4 Robot Movies. All rights reserved. &nbsp;|&nbsp;
+        <a href="index.html">Home</a> &nbsp;|&nbsp;
+        <a href="TheIronGiant.html">The Iron Giant</a> &nbsp;|&nbsp;
+        <a href="Terminator.html">The Terminator</a> &nbsp;|&nbsp;
+        <a href="Wall-E.html">Wall-E</a> &nbsp;|&nbsp;
+        <a href="RealSteel.html">Real Steel</a>
+    </p>
+</footer>
 
 </body>
 </html>
