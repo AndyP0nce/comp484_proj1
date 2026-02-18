@@ -35,6 +35,8 @@
     <section class="block">
         <h2>My Top 4 Robot Movies</h2>
         <table>
+            <!-- colgroup groups columns together, and col elements define styling for each column.
+                 This allows us to apply CSS classes to entire columns without adding classes to every cell. -->
             <colgroup>
                 <col class="colorRank" />
                 <col class="colorTitle" />
@@ -88,6 +90,10 @@
         <section class="block">
         <h3>Trailer</h3>
         <div class="videoWrap">
+            <!-- video element with:
+                 controls: displays play/pause, volume, and progress controls
+                 playsinline: allows video to play inline on mobile devices instead of fullscreen
+                 muted: video starts without audio enabled -->
             <video controls playsinline muted width="640">
                 <source src="images/realsteel.mp4" type="video/mp4">
             </video>
